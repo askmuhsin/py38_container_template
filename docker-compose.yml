@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+    lvl_1:
+        build: .
+        command: python main.py
+        volumes: 
+            - ./data:/data
+        environment:
+            PRETEXT: ${PRETEXT:-no pretext}
+
